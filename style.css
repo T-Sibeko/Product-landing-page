@@ -43,12 +43,32 @@
       opacity: 0.9;
     }
 
+    .theme-button{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--button);
+      color: var(--button-text);
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .light-mode-text{
+      display: inline;
+    }
     .dark-mode-text{
       display: none;
     }
-    #theme-toogle:checked
-    ~.website .light-mode-text{
+
+    #theme-toggle:checked~.website .light-mode-text{
       display: none;
+    }
+
+    #theme-toggle:checked~.website .dark-mode-text{
+      display: inline;
     }
 
     .product-card{
@@ -59,7 +79,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #070b12;
+      background: var(--background);
       color: #fff;
       line-height: 1.6;
     }
@@ -167,7 +187,7 @@
       padding-top: 130px;
       background:
         radial-gradient(circle at 75% 25%, rgba(255, 208, 0, .18), transparent 28%),
-        linear-gradient(135deg, #070b12, #101722);
+      var(--background);
     }
 
     .hero-grid {
@@ -192,7 +212,7 @@
     }
 
     .hero p {
-      color: #d8dbe2;
+      color: var(--text);
       max-width: 520px;
       font-size: 18px;
       margin-bottom: 30px;
@@ -258,9 +278,10 @@
     }
 
     .features-card {
-      background: rgba(28, 34, 45, .88);
+      background: var(--card);
+      color: var(--text);
       backdrop-filter: blur(18px);
-      border: 1px solid rgba(255,255,255,.08);
+      border: 1px solid var(--border);
       border-radius: 18px;
       padding-top: 80px;
       padding: 25px;
@@ -307,9 +328,9 @@
       padding: 70px 0;
       background:
         radial-gradient(circle at 0% 50%, rgba(255, 208, 0, .12), transparent 26%),
-        #121822;
-      border-top: 1px solid rgba(255,255,255,.08);
-      border-bottom: 1px solid rgba(255,255,255,.08);
+        var(--card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
     .product-grid {
@@ -331,7 +352,7 @@
     }
 
     .product-section p {
-      color: #d4d8df;
+      color: var(--text);
       margin-bottom: 24px;
     }
 
@@ -371,8 +392,9 @@
     }
 
     .testimonial {
-      background: #1a202b;
-      border: 1px solid rgba(255,255,255,.08);
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
       border-radius: 12px;
       padding: 28px;
     }
@@ -384,7 +406,7 @@
     }
 
     .testimonial p {
-      color: #d6d9df;
+      color: var(--text);
       margin-bottom: 24px;
     }
 
@@ -402,8 +424,9 @@
 
     .cta {
       margin: 35px auto 50px;
-      background: #1a202b;
-      border: 1px solid rgba(255,255,255,.08);
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
       border-radius: 18px;
       padding: 30px 70px;
       display: grid;
@@ -427,7 +450,8 @@
     }
 
     footer {
-      background: #060a10;
+      background: var(--card);
+      color: var(--text);
       padding: 36px 0;
     }
 
