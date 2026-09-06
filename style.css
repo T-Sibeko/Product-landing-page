@@ -167,7 +167,7 @@
       align-items: center;
     }
 
-    .cart {
+    .display-mode {
       width: 42px;
       height: 42px;
       background: #1b2029;
@@ -177,7 +177,7 @@
       position: relative;
     }
 
-    .cart span {
+    .display-mode span {
       position: absolute;
       top: -4px;
       right: -2px;
