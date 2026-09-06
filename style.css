@@ -21,7 +21,7 @@
     }
 
     #theme-toggle:checked~ .website .footer h4{
-      color: #ffffff;
+      color: #f9fafb;
     }
 
     body{
