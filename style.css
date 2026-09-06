@@ -293,33 +293,6 @@
       object-fit: contain;
     }
 
-    .image-two{
-      position: relative;
-      overflow: hidden;
-      border-radius: 20px;
-    }
-
-    .image-two img{
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .image-two::after{
-      content:"";
-      position: absolute;
-      inset:0;
-      pointer-events: none;
-      background: radial-gradient(
-        ellipse at center,transparent 48%,
-        rgba(0,220,220,0.8) 62%,
-        rgba(0,170,190,0.22) 78%,
-        rgba(7,20,35,0.95) 100%
-      );
-
-    }
-
-
     .features-bar {
       margin-top: -80px;
       position: relative;
@@ -391,6 +364,20 @@
 
     .product-grid img {
       width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 55%,
+        rgba(0,228,218,0.025) 75%,
+        transparent 100%
+      );
+      mask-image: radial-gradient(
+        ellipse at center,
+        black 55%,
+        rgba(0,228,218,0,25) 75%,
+        transparent 100%
+      );
     }
 
     .product-section h2,
