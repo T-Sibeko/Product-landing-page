@@ -199,6 +199,16 @@
       var(--background);
     }
 
+    .hero-image img{
+      -webkit-mask-image: radial-gradient(
+        ellipse at center,black 50%,rgba(0,0,0,0.8) 70%,transparent 100%
+      );
+      mask-image: radial-gradient(
+        ellipse at center,black 50%,rgba(0,0,0,0.8) 70%,transparent 100%
+      );
+    }
+
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -281,6 +291,7 @@
       height: auto;
       object-fit: contain;
     }
+
 
     .features-bar {
       margin-top: -80px;
