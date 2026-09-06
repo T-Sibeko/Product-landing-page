@@ -273,15 +273,6 @@
       text-align: center;
     }
 
-    .hero-image::before {
-      content: "";
-      position: absolute;
-      inset: 8% 10%;
-      border: 3px solid #ffd000;
-      border-radius: 50%;
-      box-shadow: 0 0 35px rgba(255, 208, 0, .6);
-    }
-
     .hero-image img {
       position: relative;
       z-index: 2;
@@ -360,12 +351,21 @@
       align-items: center;
     }
 
-    .product-grid img {
-      width: 100%;
+    .product-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-image img {
+      width: 85%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
       -webkit-mask-image: radial-gradient(
         ellipse at center,
         black 55%,
-        rgba(0,228,218,0.025) 75%,
+        rgba(0,220,210,0.25) 75%,
         transparent 100%
       );
       mask-image: radial-gradient(
