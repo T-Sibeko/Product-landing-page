@@ -7,7 +7,7 @@
     :root{
       --background:#ffffff;
       --text:#111827;
-      --card:#f5f5f5;
+      --card:#e8e8e8;
       --border:#e5e7eb;
       --button:#111827;
       --button-text:#ffffff;
@@ -114,7 +114,7 @@
     .outline-btn {
       width: 48px;
       height: 48px;
-      border: 1px solid #fff;
+      border: 1px solid #000;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
@@ -243,10 +243,14 @@
     }
 
     .watch {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 12px;
       font-weight: 700;
+      background: #ffd000;
+      color: #000;
+      padding: 8px 18px 8px 8px;
+      border-radius: 999px;
     }
 
     .reviews {
@@ -408,6 +412,26 @@
     .spec p {
       margin: 0;
       font-size: 14px;
+    }
+
+    .ai-agent-list{
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0;
+    }
+
+    .ai-agent-list li{
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      color:var(--text);
+    }
+    .ai-agent-list li::before{
+      content: "•";
+      color: #ffd000;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
     }
 
     .testimonials {
