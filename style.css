@@ -486,6 +486,15 @@
 
     .cta img{
       width: 230px;
+      -webkit-mask-image: radial-gradient(ellipse at center,
+      black 50%,
+      rgba(0,0,0,0.8) 70%,
+      transparent 100%
+      );
+      mask-image: radial-gradient(ellipse at content,
+      black 50%,
+      rgba(0,0,0,0.8) 70%,
+      transparent 100%);
     }
 
     .cta h2 {
@@ -498,30 +507,6 @@
       color: #d6d9df;
     }
 
-    .image-three{
-      position: relative;
-      overflow: hidden;
-      border-radius: 20px;
-    }
-
-    .image-three img{
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .image-three::after{
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: radial-gradient(ellipse at center,
-      transparent 50%,
-      rgba(0,220,210,0.06) 65%,
-      rgba(0,160,180,0.16) 80%,
-      rgba(20,24,28,0.96) 100%
-      );
-    }
 
     footer {
       background: var(--card);
