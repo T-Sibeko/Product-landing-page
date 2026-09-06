@@ -392,6 +392,13 @@
       justify-content: center;
     }
 
+    .product-image img{
+      width: 85%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
     .product-section h2,
     .testimonials h2 {
       font-size: 42px;
@@ -501,6 +508,12 @@
       grid-template-columns: 260px 1fr auto;
       align-items: center;
       gap: 40px;
+    }
+
+    .cta img{
+      width: 230px;
+      height: auto;
+      object-fit: contain;
     }
 
     .cta h2 {
