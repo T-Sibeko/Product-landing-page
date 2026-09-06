@@ -13,6 +13,13 @@
       --button-text:#ffffff;
     }
 
+    #theme-toggle:checked~ .website .feature p,
+    #theme-toggle:checked~ .website .cta p,
+    #theme-toggle:checked~ .website .footer p, 
+    #theme-toggle:checked~ .website .footer a{
+      color: #d1d5db;
+    }
+
     body{
       background: var(--background);
       color: var(--text);
