@@ -287,9 +287,36 @@
     .hero-image img {
       position: relative;
       z-index: 2;
-      max-width: 600px;
+      width: 82%;
+      max-width: 500px;
       height: auto;
       object-fit: contain;
+    }
+
+    .image-two{
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .image-two img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-two::after{
+      content:"";
+      position: absolute;
+      inset:0;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse at center,transparent 48%,
+        rgba(0,220,220,0.8) 62%,
+        rgba(0,170,190,0.22) 78%,
+        rgba(7,20,35,0.95) 100%
+      );
+
     }
 
 
@@ -457,8 +484,16 @@
       gap: 40px;
     }
 
-    .cta img {
+    .image-three img{
       width: 230px;
+      height: auto;
+    }
+
+    .image-three{
+      position: relative;
+      width: 230px;
+      overflow: hidden;
+      border-radius: 20px;
     }
 
     .cta h2 {
@@ -469,6 +504,31 @@
 
     .cta p {
       color: #d6d9df;
+    }
+
+    .image-three{
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .image-three img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-three::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(ellipse at center,
+      transparent 50%,
+      rgba(0,220,210,0.06) 65%,
+      rgba(0,160,180,0.16) 80%,
+      rgba(20,24,28,0.96) 100%
+      );
     }
 
     footer {
