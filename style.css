@@ -484,16 +484,8 @@
       gap: 40px;
     }
 
-    .image-three img{
+    .cta img{
       width: 230px;
-      height: auto;
-    }
-
-    .image-three{
-      position: relative;
-      width: 230px;
-      overflow: hidden;
-      border-radius: 20px;
     }
 
     .cta h2 {
