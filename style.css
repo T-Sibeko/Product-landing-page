@@ -20,6 +20,10 @@
       color: #d1d5db;
     }
 
+    #theme-toggle:checked~ .website .footer h4{
+      color: #ffffff;
+    }
+
     body{
       background: var(--background);
       color: var(--text);
