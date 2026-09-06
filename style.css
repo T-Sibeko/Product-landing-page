@@ -208,13 +208,33 @@
       background:var(--background);
     }
 
-    .hero-image img{
-      -webkit-mask-image: radial-gradient(
-        ellipse at center,black 50%,rgba(0,0,0,0.8) 70%,transparent 100%
+    .hero-image img,
+    .product-image img,
+    .cta img {
+      -webkit-mask-image: linear-gradient(
+        to bottom,transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+      ),
+      linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
+      mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%),
+      linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
       );
-      mask-image: radial-gradient(
-        ellipse at center,black 50%,rgba(0,0,0,0.8) 70%,transparent 100%
-      );
+      -webkit-mask-composite:source-in;
+      mask-composite: intersect;
     }
 
 
@@ -372,25 +392,6 @@
       justify-content: center;
     }
 
-    .product-image img {
-      width: 85%;
-      max-width: 500px;
-      height: auto;
-      object-fit: contain;
-      -webkit-mask-image: radial-gradient(
-        ellipse at center,
-        black 55%,
-        rgba(0,220,210,0.25) 75%,
-        transparent 100%
-      );
-      mask-image: radial-gradient(
-        ellipse at center,
-        black 55%,
-        rgba(0,228,218,0,25) 75%,
-        transparent 100%
-      );
-    }
-
     .product-section h2,
     .testimonials h2 {
       font-size: 42px;
@@ -500,19 +501,6 @@
       grid-template-columns: 260px 1fr auto;
       align-items: center;
       gap: 40px;
-    }
-
-    .cta img{
-      width: 230px;
-      -webkit-mask-image: radial-gradient(ellipse at center,
-      black 50%,
-      rgba(0,0,0,0.8) 70%,
-      transparent 100%
-      );
-      mask-image: radial-gradient(ellipse at center,
-      black 50%,
-      rgba(0,0,0,0.8) 70%,
-      transparent 100%);
     }
 
     .cta h2 {
