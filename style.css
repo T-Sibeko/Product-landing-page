@@ -194,9 +194,7 @@
     .hero {
       min-height: 760px;
       padding-top: 130px;
-      background:
-        radial-gradient(circle at 75% 25%, rgba(255, 208, 0, .18), transparent 28%),
-      var(--background);
+      background:var(--background);
     }
 
     .hero-image img{
@@ -364,8 +362,6 @@
 
     .product-grid img {
       width: 100%;
-      border-radius: 18px;
-      object-fit: cover;
       -webkit-mask-image: radial-gradient(
         ellipse at center,
         black 55%,
